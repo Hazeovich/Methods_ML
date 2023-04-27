@@ -21,7 +21,7 @@
 - Поиск линейной регрессии 
 - **Метод наимешьних квадратов** квадратичная зависимость
 - Lasso
-    - $f(x)=a\cdot x+b \approx y$, $ |\{ a_i|a_i\in a,a_i=0\}|=k, 0<k\leq |a| = m$
+    - $f(x)=a\cdot x+b \approx y; |\{ a_i|a_i\in a,a_i=0\}|=k; 0< k \leq |a|=m $ 
     - $R^2=1-\frac{\sum\limits_{i=1}^n{(y_i-f(X_i))^2}}{\sum\limits_{i=1}^n{(y_i-\bar{y})^2}}\geq{s}$
 ## Logistic regression
 - Реализация логистической регрессии
