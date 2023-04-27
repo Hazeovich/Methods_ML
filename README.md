@@ -15,27 +15,20 @@
 2. Экстраполяция за счет подбора исходной функции
 ## Linear regression
 - Функции обработки для линейной регрессии
-    1. Линейная функция - $ h_\theta(x)=\theta_1x_1 + \theta_2x_2 + ... + \theta_nx_n $
-    2. MSE - $ J(\theta)=\frac{1}{M}\sum\limits_{i=1}^M{(y_i-h_\theta(X_i))^2} $
-    3. Градиент функции MSE - $ 
-    \nabla J(\theta)=\{
-        \frac{\partial{J}}{\partial\theta_1},
-        \frac{\partial{J}}{\partial\theta_2},
-        ...,
-        \frac{\partial{J}}{\partial\theta_n} 
-        \} 
-    $
+    1. Линейная функция - $h_\theta(x)=\theta_1x_1 + \theta_2x_2 + ... + \theta_nx_n$
+    2. MSE - $J(\theta)=\frac{1}{M}\sum\limits_{i=1}^M{(y_i-h_\theta(X_i))^2}$
+    3. Градиент функции MSE - $\nabla J(\theta)=\{\frac{\partial{J}}{\partial\theta_1},\frac{\partial{J}}{\partial\theta_2},...,\frac{\partial{J}}{\partial\theta_n}\}$
 - Поиск линейной регрессии 
 - **Метод наимешьних квадратов** квадратичная зависимость
 - Lasso
-    1. $ f(x)=a\cdot x+b \approx y$, $ |\{ a_i|a_i\in a,a_i=0\}|=k, 0<k\leq |a| = m $
-    2. $ R^2=1-\frac{\sum\limits_{i=1}^n{(y_i-f(X_i))^2}}{\sum\limits_{i=1}^n{(y_i-\bar{y})^2}} \geq s$
+    1. $f(x)=a\cdot x+b \approx y$, $ |\{ a_i|a_i\in a,a_i=0\}|=k, 0<k\leq |a| = m$
+    2. $R^2=1-\frac{\sum\limits_{i=1}^n{(y_i-f(X_i))^2}}{\sum\limits_{i=1}^n{(y_i-\bar{y})^2}}\geq{s}$
 ## Logistic regression
 - Реализация логистической регрессии
-    1. $ f(x,\theta) = \sigma ( \sum\limits_{i=1}^n{x_i\theta_i} ) $
-    2. $ \sigma(x)=\frac{1}{1+e^{-x}} $
+    1. $f(x,\theta) = \sigma ( \sum\limits_{i=1}^n{x_i\theta_i} )$
+    2. $\sigma(x)=\frac{1}{1+e^{-x}}$
 - Реализация регрессии пуассона
-    1. $ f(x, \theta) = \exp(\sum\limits_{i=1}^n\theta_ix_i + \theta_0) $
+    1. $f(x, \theta) = \exp(\sum\limits_{i=1}^n\theta_ix_i + \theta_0)$
     2. $l(X, y, \theta) = \frac{1}{m}\sum\limits_{i=1}^n(y_i\log\frac{y_i}{f(X_i, \theta)} - y_i + f(X_i, \theta)) + \frac{\alpha}{2}\sum\limits_{i=1}^n\theta_i^2$
     3. $D^2 = 1 - \frac{D(y, \hat{y})}{D(y, \overline{y})}$
     4. $D(y, \hat{y}) = 2(y\log\frac{y}{\hat{y}} - y + \hat{y})$
