@@ -14,7 +14,6 @@
 
 2. Экстраполяция за счет подбора исходной функции
 ## Linear regression
-'''
 - Функции обработки для линейной регрессии
     - Линейная функция - $h_\theta(x)=\theta_1x_1 + \theta_2x_2 + ... + \theta_nx_n$
     - MSE - $J(\theta)=\frac{1}{M}\sum\limits_{i=1}^M{(y_i-h_\theta(X_i))^2}$
@@ -42,7 +41,6 @@
         - $\hat{m_t}=\frac{m_t}{1-\beta_1^t}$
         - $\hat{v_t}=\frac{v_t}{1-\beta_2^t}$
         - $\theta_{t+1}=\theta_t - \frac{\eta}{\sqrt{\hat{v_t}}+\epsilon}\hat{m_t} $
-'''
 
 $$X=\left\lbrack \matrix{ \
     X_{1,0}&X_{1,1}&...&X_{1,n} \cr \
