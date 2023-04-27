@@ -33,7 +33,7 @@
     3. $D^2 = 1 - \frac{D(y, \hat{y})}{D(y, \overline{y})}$
     4. $D(y, \hat{y}) = 2(y\log\frac{y}{\hat{y}} - y + \hat{y})$
     5. $\frac{\partial{l}}{\partial\theta_k} = \frac{1}{m}{\sum\limits_{i=1}^m(X_{i,k}(e^{\sum\limits_{j=1}^n\theta_jX_{i,j} + \theta_0} - y_i))+\alpha\theta_k},k=1...n$
-    6. $ \frac{\partial{l}}{\partial\theta_0} = \frac{1}{m}{\sum\limits_{i=1}^m(e^{\sum\limits_{j=1}^n\theta_jX_{i,j}+ \theta_0} - y_i)},k=0$
+    6. $\frac{\partial{l}}{\partial\theta_0} = \frac{1}{m}{\sum\limits_{i=1}^m(e^{\sum\limits_{j=1}^n\theta_jX_{i,j}+ \theta_0} - y_i)},k=0$
     7. $X=\begin{vmatrix}X_{1,0} & X_{1,1} & ... & X_{1,n}\\X_{2,0} & X_{2,1} & ... & X_{2,n}\\... & ... & ... & ...\\X_{m,0} & X_{1,1} & ... & X_{m,n}\\\end{vmatrix};X_{1...m,0}=1;\theta=\begin{vmatrix}\theta_0 & \theta_1 & ... & \theta_n\end{vmatrix};y=\begin{vmatrix}y_1 \\ y_2 \\ ... \\ y_m\end{vmatrix};\alpha=\begin{vmatrix}\alpha_0 \\ \alpha_1 \\ ... \\ \alpha_n\end{vmatrix};\alpha_0 = 0$	
     8. $\frac{\partial{l}}{\partial\theta_k} = \frac{1}{m}{(X(e^{\theta{X}} - y_i))+{\alpha}{\theta}}$
     9. *ADAM*
